@@ -1,0 +1,79 @@
+.mediaPlayer {
+    position: relative;
+    min-height: 50vh;
+    width: 500px;
+    background-color: black;
+}
+
+.mediaContainer {
+    display: flex;
+    margin: 0 auto;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mediaTop {
+    flex: 1;
+}
+
+.mediaTop .mediaTitle .title {
+    color: white;
+}
+
+.mediaMiddle {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mediaBottom {
+    flex: 1;
+}
+
+.mediaControl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.playControl {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.playControl button img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.mediaSeek {}
+
+/*both range slider*/
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 200px;
+    outline: none;
+    height: 2px;
+    margin: 0 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 3px;
+    background-color: rgb(84, 216, 75);
+    /* border-radius: 50%;*/
+    cursor: pointer;
+}
+
+.right input[type="range"] {
+    width: 40%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Test Widget Example</title>
+
+</head>
+
+<body>
+    <div id='mediaPlayer' class="mediaPlayer">
+        <div class="mediaContainer">
+            <div class="mediaTop">
+                <div class="mediaTitle">
+                    <h2 class="title">Media Player</h2>
+                </div>
+            </div>
+            <div class="mediaMiddle">
+                <div class="mediaLibrary">
+                    <img src="../Newfolder/assets/img1.png" alt="img">
+                </div>
+                <div class="mediaLibrary">
+                    <img src="../Newfolder/assets/img1.png" alt="img">
+                </div>
+                <div class="mediaLibrary">
+                    <img src="../Newfolder/assets/img1.png" alt="img">
+                </div>
+            </div>
+            <div class="mediaBottom">
+                <div class="playControl">
+                    <span id="prev" onclick="prev_btn()" class="fluent--previous-28-regular"></span>
+
+                    <span id="play" onclick="play_btn()" class="weui--play-outlined"></span>
+
+
+                    <span id="next" onclick="next_btn()" class="fluent--next-32-regular"></span>
+
+
+                    <span id="vol" onclick="volume_control()" class="weui--volume-up-outlined"></span>
+
+
+                    <span id="auto" onclick="autoplay_switch()" class="weui--refresh-outlined auto"></span>
+
+
+                </div>
+                <div class="mediaSeek">
+                    <input type="range" id="duration_slider" min="0" max="100" value="0" onchange="duration_change()" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
